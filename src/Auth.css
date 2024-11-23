@@ -1,0 +1,164 @@
+.auth-container {
+    display: flex;
+    height: 100vh;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .auth-left {
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .auth-overlay {
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .auth-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  
+  .auth-left::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transform: rotate(30deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .auth-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f9fc;
+    padding: 40px;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .form-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .btn-primary {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: black;
+  }
+
+  
+  .btn-secondary {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .google-signin-container {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .btn-google:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
